@@ -25,8 +25,8 @@ st.write('Selected:', optionx)
 optiony = st. selectbox ('Element y-axis:', (elements))
 st.write('Selected:', optiony)
 
-x2 = df['elements']
-y = df['elements']
+x2 = df[elements]
+y = df[elements]
 fig2, ax = plt.subplots()
 ax.scatter(x2, y)
 
