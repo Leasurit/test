@@ -7,8 +7,8 @@ st.write('Hello world')
 option = st. selectbox ('My favourite fruit:', ('Strawberry', 'Raspberry', 'Blueberry'))
 st.write('Selected:', option)
 
-arr = np.random.normal(1, 1, size=100)
+x = np.linspace(0, 50, 50)
 fig, ax = plt.subplots()
-ax.hist(arr, bins=20)
+ax.plot(x, x**2)
 
 st.pyplot(fig)
