@@ -15,9 +15,18 @@ ax.plot(x, x**2)
 
 st.pyplot(fig1)
 
+
+st.write('Bastar Craton')
 df = pd.read_csv('Bastar Craton.csv')
-x2 = df['Mg']
-y = df['Si']
+
+elements = [Mg, Si, Fe]
+optionx = st. selectbox ('Element x-axis:', ('elements'))
+st.write('Selected:', optionx)
+optiony = st. selectbox ('Element y-axis:', ('elements'))
+st.write('Selected:', optiony)
+
+x2 = df[elements]
+y = df[elements]
 fig2, ax = plt.subplots()
 ax.scatter(x2, y)
 
