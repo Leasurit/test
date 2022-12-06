@@ -15,7 +15,7 @@ ax.plot(x, x**2)
 
 st.pyplot(fig1)
 
-df = pd.read_csv('test/BastarCraton.csv')
+df = pd.read_csv('Bastar Craton.csv')
 x2 = df.loc('Mg')
 y = df.loc('Si')
 fig2, ax = plt.subplots()
