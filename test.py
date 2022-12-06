@@ -20,9 +20,9 @@ st.write('Bastar Craton')
 df = pd.read_csv('Bastar Craton.csv')
 
 elements = ['Mg', 'Si', 'Fe']
-optionx = st. selectbox ('Element x-axis:', ('elements'))
+optionx = st. selectbox ('Element x-axis:', (elements))
 st.write('Selected:', optionx)
-optiony = st. selectbox ('Element y-axis:', ('elements'))
+optiony = st. selectbox ('Element y-axis:', (elements))
 st.write('Selected:', optiony)
 
 x2 = df[elements]
