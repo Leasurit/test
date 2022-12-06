@@ -19,7 +19,7 @@ st.pyplot(fig1)
 st.write('Bastar Craton')
 df = pd.read_csv('Bastar Craton.csv')
 
-elements = [Mg, Si, Fe]
+elements = ['Mg', 'Si', 'Fe']
 optionx = st. selectbox ('Element x-axis:', ('elements'))
 st.write('Selected:', optionx)
 optiony = st. selectbox ('Element y-axis:', ('elements'))
