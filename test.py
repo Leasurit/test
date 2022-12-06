@@ -19,6 +19,6 @@ df = pd.read_csv('Bastar Craton.csv')
 x2 = df['Mg']
 y = df['Si']
 fig2, ax = plt.subplots()
-ax.plot(x2, y)
+ax.scatter(x2, y)
 
 st.pyplot(fig2)
