@@ -16,8 +16,8 @@ ax.plot(x, x**2)
 st.pyplot(fig1)
 
 df = pd.read_csv('Bastar Craton.csv')
-x2 = df.loc('Mg')
-y = df.loc('Si')
+x2 = df['Mg']
+y = df['Si']
 fig2, ax = plt.subplots()
 ax.plot(x2, y)
 
