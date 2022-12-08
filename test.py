@@ -36,7 +36,7 @@ st.pyplot(fig2)
 
 #from ipywidgets import interact
 
-xls = pd.read_excel('OxAndEl2.xlsx')
+xls = pd.ExcelFile('OxAndEl2.xlsx')
 sheet_names = ['Tabelle1', 'Tabelle2']
 df_data = pd.read_excel('data/OxAndEl2.xlsx', sheet_name="Tabelle1",index_col="Constituent")
 df_metadata = pd.read_excel('data/OxAndEl2.xlsx', sheet_name="Tabelle2")
