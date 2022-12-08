@@ -34,7 +34,7 @@ ax.scatter(x2, y)
 
 st.pyplot(fig2)
 
-from ipywidgets import interact
+#from ipywidgets import interact
 
 xls = pd.ExcelFile('data/OxAndEl2.xlsx')
 sheet_names = ['Tabelle1', 'Tabelle2']
@@ -49,10 +49,10 @@ def SelectData (name):
     fil  = df_data['Standard'] == name
     return df_data.loc[fil].T
    
-interact(SelectData, name = std_names)
+#interact(SelectData, name = std_names)
 
 def SelectMetadata (name):
     fil  = df_metadata['Standard'] == name
     return df_metadata.loc[fil]
     
-interact(SelectMetadata, name = std_names)
+#interact(SelectMetadata, name = std_names)
