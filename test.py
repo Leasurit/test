@@ -30,7 +30,7 @@ y = df[optiony]
 fig2, ax = plt.subplots()
 ax.scatter(x2, y)
 
-average = range(elements)/len(elements)
+#average = range(elements)/len(elements)
 
 st.pyplot(fig2)
 
