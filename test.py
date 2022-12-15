@@ -33,27 +33,3 @@ ax.scatter(x2, y)
 #average = range(elements)/len(elements)
 
 st.pyplot(fig2)
-
-#from ipywidgets import interact
-
-df2 = pd.read_csv('OxAndEl2.csv')
-names = df2['Standard'].drop_duplicates() 
-#sheet_names = ['Tabelle1', 'Tabelle2']
-#df_data = pd.read_excel('data/OxAndEl2.xlsx', sheet_name="Tabelle1",index_col="Constituent")
-#df_metadata = pd.read_excel('data/OxAndEl2.xlsx', sheet_name="Tabelle2")
-#std_names = df_data['Standard'].drop_duplicates() 
-
-option1 = st.selectbox('Please select a standard:', (names))
-st.write('Selected:', option1)
-
-#def SelectData (name):
-  #  fil  = df_data['Standard'] == name
-   # return df_data.loc[fil].T
-   
-#interact(SelectData, name = std_names)
-
-def SelectMetadata (name):
-    fil  = df_metadata['Standard'] == name
-    return df_metadata.loc[fil]
-    
-#interact(SelectMetadata, name = std_names)
